@@ -1,0 +1,92 @@
+.header{
+  padding-top: 15px;
+
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    width: 1520px;
+    margin: 0 auto;
+    align-self: center;
+  }
+
+  &__burger-menu{
+    margin: auto 0;
+    cursor: pointer;
+    &-line{
+      background: $blue;
+      height: 2px;
+      width: 18px;
+      margin: 3px 0;
+      
+    }
+  }
+
+  &__logo{
+    cursor: pointer;
+    align-self: center;
+    margin-right: 50px;
+    img{
+      align-self: center;
+    }
+  }
+
+  &__menu{
+    align-self: center;
+
+    &-font{
+      font-family: $helv;
+    }
+
+    &-nav{
+      
+
+      &-ul{
+        display: flex;
+      }
+
+      &-li{
+        margin: 0 50px;
+      }
+
+      &-links{
+        color: $blue;
+        font-weight: 500;
+        padding-bottom: 15px;
+        transition: .1s;
+        &:hover{
+          border-bottom: 3px solid $wh-blue;
+        }
+      }
+      
+    }
+
+
+  }
+
+  &__search{
+    align-self: center;
+
+    &-icon{
+      position: relative;
+      left: 35px;
+      top: 3px;
+    }
+
+    input{
+      border: none;
+      padding: 20px 45px;
+    }
+  }
+
+  &__user{
+    display: flex;
+    align-self: center;
+
+    &-icon{
+      align-self: center;
+      margin: 0 15px;
+    }
+
+  }
+
+}

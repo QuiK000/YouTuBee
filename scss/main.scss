@@ -1,0 +1,21 @@
+$helv: 'HelveticaNeueCyr';
+$blue: #434f74;
+$wh-blue: #719dff;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+// pages
+@import "pages/header.scss";
+// components
