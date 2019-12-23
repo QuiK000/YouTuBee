@@ -1,0 +1,49 @@
+// Fonts
+$mainFont: 'GothamPro';
+$mainFontLight: 'GothamProLight';
+$mainFontMedium: 'GothamProMedium';
+$mainFontBold: 'GothamProBold';
+
+$logoFont: 'DSJapanCyr';
+
+$mainFontColor: #000;
+$mainFontSize: 16px;
+
+$fontWeights: (
+  thin: 100,
+  extra-light: 200,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semi-bold: 600,
+  bold: 700,
+  extra-bold: 800,
+  black: 900
+);
+
+// Размеры экрана
+$breakpoints: (
+  phone: 400px,
+  phone-wide: 480px,
+  phablet: 560px,
+  tablet-small: 640px,
+  tablet: 768px,
+  tablet-wide: 1024px,
+  desktop: 1248px,
+  desktop-wide: 1440px
+);
+
+// Z indexes
+$z-indexes: (
+  //
+);
+
+// Цвета
+$color1: #e2cdb5;
+$color2: #debabe;
+$color3: #a1684a;
+$color4: #3d241c;
+$color5: #090c10;
+
+$colorBackground: #debabe;
+$colorBlocks: #f8f4f1;

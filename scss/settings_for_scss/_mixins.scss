@@ -1,0 +1,138 @@
+@mixin font-family ($fonts, $format: 'ttf') {
+  @if type-of($fonts) != 'map' { $fonts: ($fonts); }
+
+  @each $font in $fonts {
+    @font-face{
+      font-family: $font;
+      src: url("../fonts/#{$font}.#{$format}");
+    }
+  }
+}
+
+@mixin overlay ($position: absolute, $z: false) {
+  bottom: 0; left: 0;
+  right: 0; top: 0;
+  position: $position;
+  @if $z { z-index: $z; }
+}
+
+@mixin pseudo ($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin font (
+    $family: $mainFont,
+    $size: $mainFontSize,
+    $weight: regular,
+    $color: $mainFontColor,
+    $lh: false,
+    $ls: false,
+    $ta: false,
+    $tt: false,
+    $td: false
+  )
+{
+  @if $family {
+    @if type-of($family) == 'map' {
+      $family_value: map-get($family, if($weight, $weight, regular));
+      font-family: $family_value;
+    }
+    @else { font-family: $family; }
+  }
+  @if $size { font-size: $size; }
+  @if $color { color: $color; }
+  @if $lh { line-height: $lh; }
+  @if $ls { letter-spacing: $ls; }
+  @if $ta { text-align: $ta; }
+  @if $tt { text-transform: $tt; }
+  @if $td { text-decoration: $td; }
+
+  @if $weight and type-of($family) != 'map' {
+    $fontWeight: map-get($fontWeights, $weight);
+    $fontWeight: if($fontWeight, $fontWeight, $weight);
+    font-weight: $weight;
+  }
+}
+
+@mixin bg-color ($bg: #fff, $color: $mainFontColor) {
+  background: $bg;
+  color: $color;
+}
+
+@mixin mq($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max { $width: $width - 1px; }
+    @media only screen and (#{$type}-width: $width) { @content; }
+  }
+}
+
+@mixin truncate ($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin border ($border: false, $radius: false, $top: false, $right: false, $bottom: false, $left: false, $width: false, $style: false, $color: false) {
+  @if $border { border: $border; }
+  @if $radius { border-radius: $radius; }
+
+  @if $top { border-top: $top; }
+  @if $right { border-right: $right; }
+  @if $bottom { border-bottom: $bottom; }
+  @if $left { border-left: $left; }
+
+  @if $width { border-width: $width; }
+  @if $style { border-style: $style; }
+  @if $color { border-color: $color; }
+}
+
+@mixin border-radius ($radius: false, $top-left: false, $top-right: false, $bottom-left: false, $bottom-right: false) {
+  @if $radius { border-radius: $radius; }
+  @if $top-left { border-top-left-radius: $top-left; }
+  @if $top-right { border-top-right-radius: $top-right; }
+  @if $bottom-left { border-bottom-left-radius: $bottom-left; }
+  @if $bottom-right { border-bottom-right-radius: $bottom-right; }
+}
+
+@mixin flex ($justifyContent: false, $alignItems: false, $direction: false, $wrap: false) {
+  display: flex;
+  @if $justifyContent { justify-content: $justifyContent; }
+  @if $alignItems { align-items: $alignItems; }
+  @if $direction { flex-direction: $direction; }
+  @if $wrap { flex-wrap: $wrap; }
+}
+
+@mixin inline-flex ($justifyContent: false, $alignItems: false, $direction: false, $wrap: false) {
+  display: inline-flex;
+  @if $justifyContent { justify-content: $justifyContent; }
+  @if $alignItems { align-items: $alignItems; }
+  @if $direction { flex-direction: $direction; }
+  @if $wrap { flex-wrap: $wrap; }
+}
+
+@mixin position ($position: absolute, $content: '', $top: false, $right: false, $bottom: false, $left: false, $z: false) {
+  position: $position;
+  @if $content { content: $content; }
+  @if $top { top: $top; }
+  @if $right { right: $right; }
+  @if $bottom { bottom: $bottom; }
+  @if $left { left: $left; }
+  @if $z { z-index: $z; }
+}
+
+@mixin cf {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container ($width: 1170px, $margin: 0 auto) {
+  width: $width;
+  margin: $margin;
+}

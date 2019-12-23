@@ -8,6 +8,9 @@ li {
 a {
   text-decoration: none; }
 
+.unshow {
+  display: none; }
+
 .header {
   padding-top: 15px; }
   .header__container {
@@ -34,29 +37,61 @@ a {
     align-self: center; }
     .header__menu-font {
       font-family: "HelveticaNeueCyr"; }
-    .header__menu-nav-ul {
-      display: flex; }
-    .header__menu-nav-li {
-      margin: 0 50px; }
-    .header__menu-nav-links {
-      color: #434f74;
-      font-weight: 500;
-      padding-bottom: 15px;
-      transition: .1s; }
-      .header__menu-nav-links:hover {
-        border-bottom: 3px solid #719dff; }
-  .header__search {
-    align-self: center; }
-    .header__search-icon {
-      position: relative;
-      left: 35px;
-      top: 3px; }
-    .header__search input {
-      border: none;
-      padding: 20px 45px; }
+    .header__menu-nav {
+      cursor: pointer; }
+      .header__menu-nav-ul {
+        display: flex; }
+      .header__menu-nav-li {
+        margin: 0 50px; }
+      .header__menu-nav-links {
+        color: #434f74;
+        font-weight: 500;
+        padding-bottom: 15px;
+        transition: .1s; }
+        .header__menu-nav-links:hover {
+          border-bottom: 3px solid #719dff; }
   .header__user {
     display: flex;
     align-self: center; }
     .header__user-icon {
       align-self: center;
-      margin: 0 15px; }
+      margin: 0 15px;
+      cursor: pointer; }
+
+.main {
+  font-family: "HelveticaNeueCyr"; }
+  .main__sidebar {
+    padding-left: 45px;
+    width: 230px;
+    background: #fff;
+    height: 110vh; }
+    .main__sidebar-title {
+      margin: 40px 0; }
+      .main__sidebar-title-text {
+        font-weight: 500;
+        color: #434f74;
+        font-size: 14px; }
+    .main__sidebar-list {
+      margin: 5px 0; }
+      .main__sidebar-list-ul {
+        color: #434f74; }
+      .main__sidebar-list-li {
+        margin: 30px 0; }
+      .main__sidebar-list-a {
+        color: #959fbb;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 15px; }
+      .main__sidebar-list-subscribe {
+        color: #f24f86;
+        margin-left: 30px; }
+
+.header__search {
+  align-self: center; }
+  .header__search-icon {
+    position: relative;
+    left: 35px;
+    top: 3px; }
+  .header__search input {
+    border: none;
+    padding: 20px 45px; }

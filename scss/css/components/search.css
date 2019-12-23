@@ -1,0 +1,9 @@
+.header__search {
+  align-self: center; }
+  .header__search-icon {
+    position: relative;
+    left: 35px;
+    top: 3px; }
+  .header__search input {
+    border: none;
+    padding: 20px 45px; }

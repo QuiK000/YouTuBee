@@ -1,6 +1,7 @@
 $helv: 'HelveticaNeueCyr';
 $blue: #434f74;
 $wh-blue: #719dff;
+$pink: #f24f86;
 
 *{
   margin: 0;
@@ -15,7 +16,14 @@ a{
   text-decoration: none;
 }
 
+.unshow{
+  display: none;
+}
+
+
 
 // pages
 @import "pages/header.scss";
+@import "pages/main.scss";
 // components
+@import "components/search.scss";

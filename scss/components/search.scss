@@ -1,0 +1,16 @@
+.header{
+  &__search{
+    align-self: center;
+
+    &-icon{
+      position: relative;
+      left: 35px;
+      top: 3px;
+    }
+
+    input{
+      border: none;
+      padding: 20px 45px;
+    }
+  }
+}

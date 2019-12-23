@@ -1,0 +1,47 @@
+.main{
+  font-family: $helv;
+
+  &__sidebar{
+    padding-left: 45px;
+    width: 230px;
+    background: #fff;
+    height: 110vh;
+
+    &-title{
+      margin: 40px 0;
+      
+      &-text{
+        font-weight: 500;
+        color: $blue;
+        font-size: 14px;
+      }
+    }
+
+    &-list{
+      margin: 5px 0;
+
+      &-ul{
+        color: $blue;
+      }
+
+      &-li{
+        margin: 30px 0;
+      }
+
+      &-a{
+        color: #959fbb;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 15px;
+      }
+
+      &-subscribe{
+        color: $pink;
+        margin-left: 30px;
+      }
+
+    }
+
+  }
+
+}
