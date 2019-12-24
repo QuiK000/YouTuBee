@@ -46,7 +46,7 @@ a {
       .header__menu-nav-links {
         color: #434f74;
         font-weight: 500;
-        padding-bottom: 15px;
+        padding-bottom: 16px;
         transition: .1s; }
         .header__menu-nav-links:hover {
           border-bottom: 3px solid #719dff; }
@@ -62,7 +62,7 @@ a {
   font-family: "HelveticaNeueCyr"; }
   .main__sidebar {
     padding-left: 45px;
-    width: 230px;
+    width: 260px;
     background: #fff;
     height: 110vh; }
     .main__sidebar-title {
@@ -85,6 +85,85 @@ a {
       .main__sidebar-list-subscribe {
         color: #f24f86;
         margin-left: 30px; }
+  .main__content-center {
+    width: 100%; }
+    .main__content-center-bg {
+      padding-top: 40px;
+      height: 345px; }
+    .main__content-center-avatar {
+      margin-left: 120px;
+      cursor: pointer;
+      width: 0; }
+      .main__content-center-avatar img {
+        width: 95px;
+        height: 95px;
+        object-fit: cover;
+        border-radius: 5px; }
+    .main__content-center-title {
+      margin-top: 50px;
+      margin-left: 120px;
+      width: 0; }
+      .main__content-center-title-text {
+        color: #fff;
+        font-weight: 300;
+        font-size: 22px;
+        width: 165px; }
+        .main__content-center-title-text-span {
+          font-weight: 700;
+          text-transform: uppercase; }
+    .main__content-center-button {
+      margin-left: 190px;
+      margin-top: 45px;
+      font-family: 'Open Sans', sans-serif; }
+      .main__content-center-button-subscribe {
+        outline: none;
+        font-weight: 500;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 15px;
+        background: #f24f86;
+        border-radius: 5px;
+        transition: .3s;
+        border: none;
+        cursor: pointer; }
+        .main__content-center-button-subscribe:hover {
+          filter: brightness(90%); }
+    .main__content-center-social {
+      margin-top: 31px;
+      margin-left: 585px; }
+      .main__content-center-social img {
+        cursor: pointer; }
+    .main__content-center-block {
+      background: #fdfdfd;
+      width: 980px;
+      margin: 30px auto;
+      border-radius: 5px; }
+      .main__content-center-block-title {
+        padding-top: 40px;
+        margin-left: 40px; }
+        .main__content-center-block-title-text {
+          color: #434f74;
+          font-size: 19px; }
+      .main__content-center-block-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 910px; }
+      .main__content-center-block-elements {
+        align-self: center;
+        padding-top: 45px;
+        cursor: pointer; }
+
+.footer {
+  margin-top: 2500px;
+  margin-bottom: 100px; }
+  .footer__center {
+    display: flex;
+    justify-content: center; }
+    .footer__center img {
+      cursor: pointer;
+      transition: .3s; }
+      .footer__center img:hover {
+        transform: rotate(180deg); }
 
 .header__search {
   align-self: center; }
@@ -95,3 +174,42 @@ a {
   .header__search input {
     border: none;
     padding: 20px 45px; }
+
+.main__content-center-card {
+  display: flex;
+  background: #fff;
+  box-shadow: 0px 1px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  border-radius: 10px; }
+  .main__content-center-card-img {
+    height: 100%;
+    width: 162px; }
+    .main__content-center-card-img img {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px; }
+  .main__content-center-card-description {
+    margin-left: 110px; }
+    .main__content-center-card-description-title {
+      margin-top: 25px;
+      margin-bottom: 20px; }
+      .main__content-center-card-description-title-text {
+        font-size: 10px;
+        color: #434f74; }
+    .main__content-center-card-description-subtitle {
+      margin-bottom: 13px; }
+      .main__content-center-card-description-subtitle-text {
+        color: #719dff;
+        font-size: 18px;
+        font-weight: 500; }
+    .main__content-center-card-description-video {
+      margin-bottom: 2px; }
+      .main__content-center-card-description-video-text {
+        font-weight: 500;
+        font-size: 12px;
+        color: #434f74; }
+    .main__content-center-card-description-desc {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .main__content-center-card-description-desc-text {
+        font-size: 12px;
+        color: #434f74; }

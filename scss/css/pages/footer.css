@@ -1,0 +1,11 @@
+.footer {
+  margin-top: 2500px;
+  margin-bottom: 100px; }
+  .footer__center {
+    display: flex;
+    justify-content: center; }
+    .footer__center img {
+      cursor: pointer;
+      transition: .3s; }
+      .footer__center img:hover {
+        transform: rotate(180deg); }

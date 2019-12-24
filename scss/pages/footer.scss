@@ -1,0 +1,21 @@
+.footer{
+  margin-top: 2500px;
+  margin-bottom: 100px;
+
+  &__center{
+    display: flex;
+    justify-content: center;
+
+    img{
+      cursor: pointer;
+      transition: .3s;
+
+      &:hover{
+        transform: rotate(180deg);
+      }
+
+    }
+
+  }
+
+}
