@@ -165,6 +165,77 @@ a {
       .footer__center img:hover {
         transform: rotate(180deg); }
 
+.back {
+  background: #FAFBFD; }
+
+.login {
+  width: 375px;
+  margin: 0 auto;
+  text-align: center;
+  background: #FFFFFF;
+  border-radius: 5px; }
+  .login__content {
+    margin-top: 95px; }
+    .login__content-logo {
+      padding: 75px 0; }
+    .login__content-title {
+      font-family: "HelveticaNeueCyr";
+      margin-bottom: 8px; }
+      .login__content-title-text {
+        color: #7041EE;
+        letter-spacing: -0.04em;
+        font-size: 62px;
+        text-transform: uppercase; }
+    .login__content-subtitle {
+      font-family: "HelveticaNeueCyr";
+      margin-bottom: 108px; }
+      .login__content-subtitle-text {
+        font-size: 16px;
+        color: #2C2929; }
+    .login__content-button {
+      margin: 16px 0;
+      font-family: "HelveticaNeueCyr"; }
+    .login__content-btn-getstarted {
+      display: block;
+      margin: 0 auto;
+      font-size: 19px;
+      line-height: 58px;
+      background: #7041EE;
+      width: 305px;
+      height: 58px;
+      color: #fff;
+      border-radius: 24px;
+      box-shadow: 0px 16px 60px rgba(134, 109, 201, 0.16);
+      transition: .3s; }
+      .login__content-btn-getstarted:hover {
+        background: #fff;
+        color: #7041EE; }
+    .login__content-btn-login {
+      display: block;
+      margin: 0 auto;
+      font-size: 19px;
+      line-height: 58px;
+      background: #fff;
+      width: 305px;
+      height: 58px;
+      color: #7041EE;
+      border-radius: 24px;
+      box-shadow: 0px 16px 60px rgba(78, 79, 114, 0.08);
+      transition: .3s; }
+      .login__content-btn-login:hover {
+        background: #7041EE;
+        color: #fff; }
+    .login__content-around {
+      margin-top: 30px;
+      padding-bottom: 75px; }
+      .login__content-around-text {
+        color: #2E2727;
+        font-family: "HelveticaNeueCyr";
+        font-size: 15px; }
+      .login__content-around-btn {
+        color: #7041EE;
+        font-weight: 600; }
+
 .header__search {
   align-self: center; }
   .header__search-icon {
