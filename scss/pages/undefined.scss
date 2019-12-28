@@ -1,0 +1,33 @@
+.undefined{
+  text-align: center;
+
+  &__content{
+    font-family: 'Open Sans', sans-serif;
+
+    &-center{
+      margin-top: 13%; 
+    }
+
+    &-title{
+      font-size: 184px;
+      color: #222;
+      font-weight: 900;
+    }
+
+    &-back{
+
+      img{
+        max-width: 50px;
+        transition: .3s;
+
+        &:hover{
+          transform: rotate(180deg);
+        }
+
+      }
+
+    }
+
+  }
+
+}
