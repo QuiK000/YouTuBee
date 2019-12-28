@@ -245,7 +245,10 @@ a {
   .form__content {
     margin-top: 95px; }
     .form__content-logo {
-      padding: 75px 0; }
+      padding: 75px 0;
+      transition: .3s; }
+      .form__content-logo:hover {
+        transform: rotate(-360deg); }
     .form__content-title {
       font-family: "HelveticaNeueCyr";
       margin-bottom: 8px; }

@@ -19,6 +19,10 @@
 
     &-logo{
       padding: 75px 0;
+      transition: .3s;
+      &:hover{
+        transform: rotate(-360deg);
+      }
     }
 
     &-title{
