@@ -154,11 +154,9 @@ a {
         cursor: pointer; }
 
 .footer {
-  margin-top: 200px;
-  margin-bottom: 100px; }
+  margin: 50px 0; }
   .footer__center {
-    text-align: center;
-    margin-left: 230px; }
+    text-align: center; }
     .footer__center img {
       cursor: pointer;
       transition: .3s; }

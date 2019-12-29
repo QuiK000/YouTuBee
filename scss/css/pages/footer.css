@@ -1,11 +1,7 @@
-.footer {
-  margin-top: 200px;
-  margin-bottom: 100px; }
-  .footer__center {
-    text-align: center;
-    margin-left: 400px; }
-    .footer__center img {
-      cursor: pointer;
-      transition: .3s; }
-      .footer__center img:hover {
-        transform: rotate(180deg); }
+.footer__center {
+  text-align: center; }
+  .footer__center img {
+    cursor: pointer;
+    transition: .3s; }
+    .footer__center img:hover {
+      transform: rotate(180deg); }
