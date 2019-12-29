@@ -179,6 +179,32 @@ a {
       .undefined__content-back img:hover {
         transform: rotate(180deg); }
 
+.main__user {
+  transition: .3s; }
+  .main__user-video {
+    width: 1079px;
+    height: 560px; }
+    .main__user-video-title {
+      margin-top: 15px; }
+      .main__user-video-title-text {
+        font-size: 46px;
+        color: #222; }
+    .main__user-video-subscribe {
+      margin-top: 20px; }
+      .main__user-video-subscribe-btn {
+        outline: none;
+        font-weight: 500;
+        color: #fff;
+        font-size: 14px;
+        padding: 10px 15px;
+        background: #f24f86;
+        border-radius: 5px;
+        transition: .3s;
+        border: none;
+        cursor: pointer; }
+        .main__user-video-subscribe-btn:hover {
+          filter: brightness(90%); }
+
 .header__search {
   align-self: center; }
   .header__search-icon {

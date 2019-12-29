@@ -1,0 +1,46 @@
+.main{
+
+  &__user{
+    transition: .3s;
+    &-video{
+      width: 1079px;
+      height: 560px;
+
+      &-title{
+        margin-top: 15px;
+
+        &-text{
+          font-size: 46px;
+          color: #222;
+        }
+
+      }
+
+      &-subscribe{
+        margin-top: 20px;
+
+        &-btn{
+          outline: none;
+          font-weight: 500;
+          color: #fff;
+          font-size: 14px;
+          padding: 10px 15px;
+          background: $pink;
+          border-radius: 5px;
+          transition: .3s;
+          border: none;
+          cursor: pointer;
+
+          &:hover{
+            filter: brightness(90%);
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

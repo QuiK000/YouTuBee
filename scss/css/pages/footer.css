@@ -1,7 +1,9 @@
-.footer__center {
-  text-align: center; }
-  .footer__center img {
-    cursor: pointer;
-    transition: .3s; }
-    .footer__center img:hover {
-      transform: rotate(180deg); }
+.footer {
+  margin: 50px 0; }
+  .footer__center {
+    text-align: center; }
+    .footer__center img {
+      cursor: pointer;
+      transition: .3s; }
+      .footer__center img:hover {
+        transform: rotate(180deg); }
