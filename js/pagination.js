@@ -39,8 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let j = 0;
     for (let i = 0; i < elementNum.length; i++) {
       const data_num = elementNum[i].dataset.num;
-      if (data_num <= data_page || data_num >= data_page)
-        elementNum[i].style.display = "none";
+      if (data_num <= data_page || data_num >= data_page) elementNum[i].style.display = "none";
 
     }
     for (let i = data_page; i < elementNum.length; i++) {
