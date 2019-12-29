@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="scss/css/main.css">
+  <!-- GRID -->
+  <link rel="stylesheet" href="libs/bootstrap/grid/bootstrap-grid.css">
+  <!-- FONT -->
+  <link rel="stylesheet" href="fonts/Helvetica/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+</head>
+<body class="back">
+
+
+  <main class="auth">
+    <div class="auth__block">
+      <div class="auth__block-title">
+        <h2 class="auth__block-title-text">Войти
+          <span class="auth__block-close">
+            <img src="images/close.svg" alt="close">
+          </span>
+        </h2>
+        
+      </div>
+      <div class="auth__block-description">
+        <p class="auth__block-description-text">Номер телефона</p>
+      </div>
+      <form action="">
+        <div class="auth__block-input">
+          <input type="text" class="auth__block-input-number" placeholder="+">
+        </div>
+        <div class="auth__block-button">
+          <a href="#" class="auth__block-btn">Далее</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script>
+
+    const close = document.querySelector('.auth__block-close');
+    const auth = document.querySelector('.auth');
+
+    close.addEventListener('click', () => {
+      console.log('display == none');
+      auth.style.display = 'none';
+    })
+
+  </script>
+  
+</body>
+</html>
