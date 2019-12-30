@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const c = 14;
-  const cn = 3;
+  const c = 15;
+  const cn = 5;
   const FullPage = Math.ceil(c / cn);
 
   const paginator = document.querySelector(".paginator");
