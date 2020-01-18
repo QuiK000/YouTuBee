@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const reload = document.querySelector('.reload');
 
-  const reloadPage = event => {
+  const reloadPage = () => {
     for (let i = 0; i < 10; i++){
       console.log(i + 1);
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         clearTimeout(reload);
       }
 
-      alert('1231231231');
+      console.log('Reload was successful');
 
       reloadPage = setTimeout(() => {
         location.reload(true);
