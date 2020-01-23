@@ -179,6 +179,9 @@ a {
       .undefined__content-back img:hover {
         transform: rotate(180deg); }
 
+.main__user-margins {
+  margin-left: 200px; }
+
 .main__user {
   transition: .3s; }
   .main__user-video {
@@ -189,6 +192,8 @@ a {
       .main__user-video-title-text {
         font-size: 46px;
         color: #222; }
+    .main__user-video-description {
+      max-width: 40%; }
     .main__user-video-subscribe {
       margin-top: 20px; }
       .main__user-video-subscribe-btn {

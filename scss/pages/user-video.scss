@@ -1,5 +1,9 @@
 .main{
 
+  &__user-margins {
+    margin-left: 200px;
+  }
+
   &__user{
     transition: .3s;
     &-video{
@@ -14,6 +18,10 @@
           color: #222;
         }
 
+      }
+
+      &-description {
+        max-width: 40%;
       }
 
       &-subscribe{

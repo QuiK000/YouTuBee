@@ -28,7 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const target = e.target;
     const id = target.id;
     
-    if (target.tagName.toLowerCase() != "span") return;
+    if (target.tagName.toLowerCase() != "span") {
+      return;
+    }
     
     const num_ = id.substr(4);
     const data_page = +target.dataset.page;
@@ -39,8 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let j = 0;
     for (let i = 0; i < elementNum.length; i++) {
       const data_num = elementNum[i].dataset.num;
-      if (data_num <= data_page || data_num >= data_page) elementNum[i].style.display = "none";
-
+      if (data_num <= data_page || data_num >= data_page) { 
+        elementNum[i].style.display = "none";
+      }
     }
     for (let i = data_page; i < elementNum.length; i++) {
       if (j >= cn) break;
