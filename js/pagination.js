@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   for (var i = 0; i < FullPage; i++) {
     span += "<span class='paginator-number' data-page=" + i * cn + "  id=\"page" + (i + 1) + "\">" + (i + 1) + "</span>";
   }
+  
   paginator.innerHTML = span;
 
   const elementNum = document.querySelectorAll("#num");
@@ -31,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (target.tagName.toLowerCase() != "span") {
       return;
     }
-    
+
     const num_ = id.substr(4);
     const data_page = +target.dataset.page;
     mainActive.classList.remove("paginator_active");
